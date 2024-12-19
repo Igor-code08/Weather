@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f3f3f3">
+
+    <!-- Поле для ввода названия города -->
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название города"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:textSize="16sp" />
+
+    <!-- Кнопка для получения погоды по названию города -->
+    <Button
+        android:id="@+id/getWeatherButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Получить погоду"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+    <!-- Кнопка для получения погоды по GPS -->
+    <Button
+        android:id="@+id/useGpsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Использовать GPS"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF" />
+
+    <!-- Текстовое поле для отображения информации о погоде -->
+    <TextView
+        android:id="@+id/weatherInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp" />
+
+</LinearLayout>
